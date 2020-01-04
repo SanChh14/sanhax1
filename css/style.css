@@ -371,8 +371,7 @@ footer h3{
 
 @media (max-width: 450px) {
     body{
-        height: 100vh;
-        background-attachment: fixed;
+        
     }
 }
 
