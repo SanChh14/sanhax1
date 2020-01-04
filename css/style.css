@@ -371,8 +371,8 @@ footer h3{
 
 @media (max-width: 450px) {
     body{
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-attachment: scroll;
     }
 }
 
