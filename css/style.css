@@ -325,10 +325,7 @@ footer h3{
     }
 
     aside ul{
-        display: inherit;
-        transform-origin: top;
-        transform: perspective(1000px) rotateX(0deg);
-        transition: transform 0.5s ease;
+        display: none;
         padding:5px 0 10px 10px;
     }
 
@@ -353,9 +350,13 @@ footer h3{
         background-color: rgba(102, 252, 241, 0.6);
     }
 
-    aside ul.active{
+    aside:hover ul,
+    aside:hover .up{
+        display: inherit;
+    }
+
+    aside:hover .drop{
         display: none;
-        transform: perspective(1000px) rotateX(-90deg);
     }
 
     .drop{
