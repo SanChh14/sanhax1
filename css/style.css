@@ -178,7 +178,7 @@ section h2{
 }
 
 .frontimg:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -315,6 +315,7 @@ footer h3{
     section{
         float: none;
         width:95%;
+        margin-top:20px;
     }
 
     aside{
@@ -324,8 +325,11 @@ footer h3{
     }
 
     aside ul{
-        margin-bottom:20px;
-        padding:5px 0 5px 10px;
+        display: inherit;
+        transform-origin: top;
+        transform: perspective(1000px) rotateX(0deg);
+        transition: transform 0.5s ease;
+        padding:5px 0 10px 10px;
     }
 
     .trendingss{
@@ -349,6 +353,11 @@ footer h3{
         background-color: rgba(102, 252, 241, 0.6);
     }
 
+    aside ul.active{
+        display: none;
+        transform: perspective(1000px) rotateX(-90deg);
+    }
+
     .drop{
         margin-top:10px;
         margin-right: 10px;
@@ -370,8 +379,9 @@ footer h3{
 }
 
 @media (max-width: 450px) {
-    body{
-        
+        .current{
+            padding-bottom: 2px;
+        }
     }
 }
 
